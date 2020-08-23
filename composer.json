@@ -1,0 +1,20 @@
+{
+  "name": "magehook/module-hook-events-customer",
+  "description": "Magento customer hook events",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "Commercial"
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MageHook\\HookEventsCustomer\\": ""
+    }
+  }
+}

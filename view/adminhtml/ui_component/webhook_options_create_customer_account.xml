@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * @author MageHook <info@magehook.com>
+ * @package MageHook_HookEventsCustomer
+ *
+ * For the full copyright and license information, please view the LICENSE.txt
+ * file that was distributed with this source code.
+-->
+<container name="create_customer_account"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+  <field name="customer_groups">
+    <argument name="data" xsi:type="array">
+      <item name="options" xsi:type="object">
+        Magento\Customer\Model\Config\Source\Group\Multiselect
+      </item>
+      <item name="config" xsi:type="array">
+        <item name="dataType" xsi:type="string">int</item>
+        <item name="label" xsi:type="string" translate="true">Customer Groups</item>
+        <item name="formElement" xsi:type="string">multiselect</item>
+        <item name="sortOrder" xsi:type="number">10</item>
+        <item name="dataScope" xsi:type="string">customer_groups</item>
+        <item name="validation" xsi:type="array">
+          <item name="required-entry" xsi:type="boolean">false</item>
+        </item>
+      </item>
+    </argument>
+  </field>
+</container>

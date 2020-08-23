@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+ * @author MageHook <info@magehook.com>
+ * @package MageHook_HookEventsCustomer
+ *
+ * For the full copyright and license information, please view the LICENSE.txt
+ * file that was distributed with this source code.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:MageHook_Hook/etc/webhooks.xsd">
+  <hook event="create_customer_account"
+        title="Create Account"
+        group="Customer"
+        service="Magento\Customer\Api\Data\CustomerInterface"
+        validator="MageHook\HookEventsCustomer\Event\Options\CreateCustomerAccountValidator"/>
+</config>
