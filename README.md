@@ -14,7 +14,7 @@ php bin/magento setup:upgrade
 ```
 
 ## Events
-- ?
+- Create Account
 
 ## Contributors
 1. Willem Poortman (founder) <willem@magehook.com>
